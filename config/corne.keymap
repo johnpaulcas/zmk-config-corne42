@@ -41,7 +41,7 @@
         hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(LSHFT)))>;
+            bindings = <&mt LA(LC(LG(LSHFT))) LA(LC(LG(LSHIFT)))>;
             label = "HYPER";
         };
     };
