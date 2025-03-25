@@ -41,7 +41,7 @@
         hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mt LA(LC(LG(LSHFT))) LA(LC(LG(LSHIFT)))>;
+            bindings = <&kp LC(LS(LA(LEFT_COMMAND)))>;
             label = "HYPER";
         };
     };
@@ -61,7 +61,7 @@
 &kp TAB                       &kp Q              &kp W                  &kp E                 &kp R           &kp T      &kp Y    &kp U           &kp I                 &kp O                   &kp P                  &none
 &kp LC(LS(LA(LEFT_COMMAND)))  &hrm_l LEFT_ALT A  &hrm_l LEFT_COMMAND S  &hrm_l RIGHT_SHIFT D  &hrm_l RCTRL F  &kp G      &kp H    &hrm_r RCTRL J  &hrm_r RIGHT_SHIFT K  &hrm_r RIGHT_COMMAND L  &hrm_r RIGHT_ALT SEMI  &kp ENTER
 &caps_word                    &kp Z              &kp X                  &kp C                 &kp V           &kp B      &kp N    &kp M           &kp COMMA             &kp DOT                 &kp FSLH               &none
-                                                                        &mo 1                 &kp BACKSPACE   &kp ESC    &kp RET  &kp SPACE       &mo 2
+                                                                        &mo 1                 &kp BACKSPACE   &kp ESC    &kp RET  &lt 2 SPACE     &hyper
             >;
         };
 
