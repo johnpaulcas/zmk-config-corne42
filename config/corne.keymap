@@ -64,7 +64,7 @@
             key-positions = <31 32>;
         };
 
-        lbrack {
+        rbrack {
             bindings = <&mt RIGHT_BRACKET RIGHT_BRACE>;
             key-positions = <32 33>;
         };
