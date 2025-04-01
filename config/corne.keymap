@@ -75,8 +75,8 @@
         };
 
         sdel {
-            bindings = <&kp LA(DEL)>;
-            key-positions = <20 40>;
+            bindings = <&kp LA(DELETE)>;
+            key-positions = <8 7>;
         };
 
         kgame {
