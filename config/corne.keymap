@@ -73,6 +73,11 @@
             bindings = <&kp ESC>;
             key-positions = <8 9>;
         };
+
+        sdel {
+            bindings = <&kp LA(DEL)>;
+            key-positions = <20 40>;
+        };
     };
 
     keymap {
