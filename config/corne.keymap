@@ -78,6 +78,11 @@
             bindings = <&kp LA(DEL)>;
             key-positions = <20 40>;
         };
+
+        kgame {
+            bindings = <&tog 3>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
@@ -108,10 +113,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp APOSTROPHE   &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES     &kp PERIOD    &kp AMPERSAND  &kp GRAVE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &none
-&kp LCTRL  &kp EXCLAMATION  &kp PLUS       &kp MINUS         &kp EQUAL             &kp HASH      &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &none
-&kp LSHFT  &none            &kp SLASH      &kp ASTERISK      &kp NON_US_BACKSLASH  &kp TILDE     &kp UNDER      &kp DOLLAR  &kp LBRC              &kp RBRC               &kp AT_SIGN   &trans
-                                           &kp LGUI          &trans                &kp SPACE     &kp RET        &trans      &trans
+&kp TAB    &kp APOSTROPHE   &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES     &kp PERIOD      &kp AMPERSAND  &kp GRAVE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &none
+&kp LCTRL  &kp EXCLAMATION  &kp PLUS       &kp MINUS         &kp EQUAL             &kp HASH        &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &none
+&kp LSHFT  &none            &kp SLASH      &kp ASTERISK      &kp NON_US_BACKSLASH  &kp TILDE       &kp UNDER      &kp DOLLAR  &kp LBRC              &kp RBRC               &kp AT_SIGN   &trans
+                                           &none             &trans                &kp C_REPEAT    &kp RET        &trans      &trans
             >;
         };
 
@@ -131,14 +136,16 @@
             >;
         };
 
-        workflow {
+        gaming {
             display-name = "Lower";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &none   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB  &kp Q  &kp W  &kp E   &kp R     &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P     &trans
+&kp ESC  &kp A  &kp S  &kp D   &kp F     &kp G           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &trans
+&trans   &kp Z  &kp X  &kp C   &kp V     &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH  &trans
+                       &trans  &kp BSPC  &kp C_REPEAT    &kp ENTER     &kp SPACE     &trans
             >;
+
+            label = "Gaming Layer";
         };
     };
 };
