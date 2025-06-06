@@ -114,7 +114,7 @@
             display-name = "Raise";
             bindings = <
 &kp TAB    &kp APOSTROPHE   &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD      &kp AMPERSAND  &kp GRAVE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &none
-&kp LCTRL  &kp EXCLAMATION  &kp PLUS       &kp MINUS         &kp EQUAL          &kp HASH        &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &none
+&kp CARET  &kp EXCLAMATION  &kp PLUS       &kp MINUS         &kp EQUAL          &kp HASH        &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &none
 &kp LSHFT  &none            &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp TILDE       &kp UNDER      &kp DOLLAR  &kp LBRC              &kp RBRC               &kp AT_SIGN   &trans
                                            &none             &trans             &kp C_REPEAT    &kp RET        &trans      &trans
             >;
@@ -146,6 +146,15 @@
             >;
 
             label = "Gaming Layer";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
