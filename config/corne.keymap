@@ -80,7 +80,7 @@
         };
 
         kgame {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <40 41>;
         };
     };
@@ -97,10 +97,19 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E           &kp R            &kp T          &kp Y    &kp U           &kp I                         &kp O                   &kp P                       &none
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F            &kp G          &kp H    &hrm_r RCTRL J  &hrm_r RIGHT_SHIFT K          &hrm_r RIGHT_COMMAND L  &hrm_r RIGHT_ALT SEMICOLON  &kp COLON
-&caps_word      &kp Z  &kp X  &kp C           &kp V            &kp B          &kp N    &kp M           &kp COMMA                     &kp DOT                 &kp FSLH                    &none
-                              &kp LEFT_SHIFT  &lt 4 BACKSPACE  &key_repeat    &kp RET  &lt 1 SPACE     &kp LC(LS(LA(LEFT_COMMAND)))
+&kp TAB         &kp Q  &kp W  &kp E  &kp R      &kp T          &kp Y    &kp U           &kp I                         &kp O                   &kp P                       &none
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F      &kp G          &kp H    &hrm_r RCTRL J  &hrm_r RIGHT_SHIFT K          &hrm_r RIGHT_COMMAND L  &hrm_r RIGHT_ALT SEMICOLON  &kp COLON
+&caps_word      &kp Z  &kp X  &kp C  &kp V      &kp B          &kp N    &kp M           &kp COMMA                     &kp DOT                 &kp FSLH                    &none
+                              &mo 1  &kp LCTRL  &key_repeat    &kp RET  &lt 2 SPACE     &kp LC(LS(LA(LEFT_COMMAND)))
+            >;
+        };
+
+        game-1 {
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_9  &kp NUMBER_0  &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
 
@@ -154,15 +163,6 @@
 &kp CARET  &kp EXCLAMATION  &kp PLUS       &kp MINUS         &kp EQUAL          &kp HASH        &kp PIPE       &kp COLON   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &none
 &kp LSHFT  &none            &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &kp TILDE       &kp UNDER      &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN   &trans
                                            &none             &trans             &kp C_REPEAT    &kp SLASH      &kp EQUAL   &kp ASTERISK
-            >;
-        };
-
-        game-1 {
-            bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
