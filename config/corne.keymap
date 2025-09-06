@@ -80,7 +80,7 @@
         };
 
         kgame {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <40 41>;
         };
     };
@@ -100,7 +100,7 @@
 &kp TILDE       &kp Q  &kp W  &kp F         &kp P        &kp B        &kp J    &kp L                 &kp U                   &kp Y               &kp SEMICOLON           &none
 &kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T        &kp G        &kp M    &hrm_r RIGHT_SHIFT N  &hrm_r RIGHT_COMMAND E  &hrm_r RIGHT_ALT I  &hrm_r RIGHT_CONTROL O  &kp COLON
 &sl 2           &kp Z  &kp X  &kp C         &kp D        &kp V        &kp K    &kp H                 &kp COMMA               &kp DOT             &kp FSLH                &none
-                              &kp LEFT_ALT  &lt 1 SPACE  &kp LCTRL    &kp RET  &lt 3 BACKSPACE       &kp TAB
+                              &kp LEFT_ALT  &lt 1 SPACE  &kp LCTRL    &kp RET  &lt 4 BACKSPACE       &kp TAB
             >;
         };
 
@@ -117,7 +117,16 @@
             bindings = <
 &trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(NUMBER_6)  &kp LC(NUMBER_7)  &kp LC(NUMBER_8)  &kp LC(NUMBER_9)  &kp LC(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(F1)        &kp LC(F2)        &kp LC(F3)        &kp LC(F4)        &kp LC(F5)          &trans  &trans  &trans  &trans  &trans  &trans
+&sl 3   &kp LC(F1)        &kp LC(F2)        &kp LC(F3)        &kp LC(F4)        &kp LC(F5)          &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans            &trans            &trans              &trans  &trans  &trans
+            >;
+        };
+
+        game-shift {
+            bindings = <
+&trans  &kp LS(NUMBER_1)  &kp RS(NUMBER_2)  &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(NUMBER_0)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RS(F1)        &kp RS(F2)        &kp RS(F3)        &kp RS(F4)        &kp RS(F5)          &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans            &trans            &trans              &trans  &trans  &trans
             >;
         };
