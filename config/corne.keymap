@@ -99,8 +99,8 @@
             bindings = <
 &kp GRAVE       &kp Q  &kp W  &kp F  &kp P        &kp B        &kp J    &kp L                 &kp U                   &kp Y               &kp SEMICOLON           &none
 &kp LEFT_SHIFT  &kp A  &kp R  &kp S  &kp T        &kp G        &kp M    &hrm_r RIGHT_SHIFT N  &hrm_r RIGHT_COMMAND E  &hrm_r RIGHT_ALT I  &hrm_r RIGHT_CONTROL O  &kp COLON
-&sl 2           &kp Z  &kp X  &kp C  &kp D        &kp V        &kp K    &kp H                 &kp COMMA               &kp DOT             &kp FSLH                &none
-                              &sl 3  &lt 1 SPACE  &kp LCTRL    &kp RET  &lt 4 BACKSPACE       &kp TAB
+&sl 3           &kp Z  &kp X  &kp C  &kp D        &kp V        &kp K    &kp H                 &kp COMMA               &kp DOT             &kp FSLH                &none
+                              &sl 2  &lt 1 SPACE  &kp LCTRL    &kp RET  &lt 4 BACKSPACE       &kp TAB
             >;
         };
 
